@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<style>
+html,body{
+margin:0;
+width:100%;
+height:100%;
+}
+</style>
+<script>
+function go1(){
+document.getElementById("t1").src = document.getElementById("tab1").value;
+}
+function go2(){
+document.getElementById("t2").src = document.getElementById("tab2").value;
+}
+</script>
+<body>
+<h2>Double Tab</h2>
+<hr>
+tab 1
+<textarea id="tab1"></textarea>
+tab 2
+<textarea id="tab2"></textarea>
+<button onclick="go1()">Go Tab 1</button><button onclick="go2()">Go Tab 2</button>
+<hr>
+<iframe id="t1"width="49%" height="100%"src="https://google.com" title="W3Schools Free Online Web Tutorials">
+</iframe><iframe id="t2"width="50%" height="100%"src="https://yahoo.com" title="W3Schools Free Online Web Tutorials">
+</iframe>
+
+</body>
+</html>
